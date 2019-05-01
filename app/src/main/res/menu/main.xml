@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+   <!-- <item
+        android:id="@+id/prev"
+        android:icon="@drawable/ic_prev"
+        app:showAsAction="ifRoom"
+        android:title="Previous"/>
+
+    <item
+        android:id="@+id/next"
+        android:icon="@drawable/ic_next"
+        app:showAsAction="ifRoom"
+        android:title="Next"/>
+
+-->
+
+
+    <item
+        android:id="@+id/clear"
+        app:showAsAction="always"
+        android:title="Clear"/>
+
+    <item
+        android:id="@+id/close"
+        android:icon="@drawable/ic_close"
+        app:showAsAction="always"
+        android:title="Close"/>
+</menu>

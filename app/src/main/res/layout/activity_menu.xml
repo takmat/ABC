@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/conLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center|center_horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/level1"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+
+                    android:gravity="fill_horizontal"
+                    android:onClick="menuItemOne"
+                    android:text="Íráselemek" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+
+                    <TableRow>
+
+                        <ImageButton
+                            android:id="@+id/imageButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"
+                            android:src="@drawable/thumbnail_charflipv"
+                            android:tag="charflipv"
+                            tools:layout_editor_absoluteX="190dp"
+                            tools:layout_editor_absoluteY="69dp" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"
+                            android:src="@drawable/thumbnail_charv"
+                            android:tag="charv" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <ImageButton
+                            android:id="@+id/imageButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"
+                            android:src="@drawable/thumbnail_charu"
+                            android:tag="charu" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"
+                            android:src="@drawable/thumbnail_charflipu"
+                            android:tag="charflipu" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <ImageButton
+                            android:id="@+id/imageButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"
+                            android:src="@drawable/thumbnail_charf"
+                            android:tag="charf" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:src="@drawable/thumbnail_charflipf"
+                            android:tag="charflipf"
+                            android:onClick="drawThisChar"/>
+
+                    </TableRow>
+                </TableLayout>
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/letters"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+
+                    android:gravity="fill_horizontal"
+                    android:onClick="menuItemTwo"
+                    android:text="Betük" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/puzzle"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+
+                    android:gravity="fill_horizontal"
+                    android:onClick="menuItemThree"
+                    android:text="Gomb 3" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
