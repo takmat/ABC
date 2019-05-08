@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     Connection con;
     String un, pass, db, ip, port;
 
+    String extraUsername;
+    String id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(String... params){
             String usernam =username.getText().toString();
             String passw = password.getText().toString();
+            extraUsername = usernam;
 
             if (usernam.trim().equals("")||passw.trim().equals("")){
                 z="Enter Username and password";
@@ -120,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
                         ResultSet rs = stmt.executeQuery(query);
                         if (rs.next()){
                             z="Login Successful";
+                            id = rs.getString("id");
                             isSuccess=true;
                             con.close();
                         }
@@ -143,8 +147,11 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, r, Toast.LENGTH_SHORT).show();
             if (isSuccess){
                 Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                Intent i;
-                i = new Intent(MainActivity.this,MenuActivity.class);
+
+                Intent i = new Intent(MainActivity.this, MenuActivity.class);
+
+                i.putExtra("username" ,extraUsername);
+                i.putExtra("userID" ,id);
                 startActivity(i);
 
             }
@@ -201,9 +208,10 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, r, Toast.LENGTH_SHORT).show();
             if (isSuccess){
                 Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                Intent i;
-                i = new Intent(MainActivity.this,MenuActivity.class);
-                startActivity(i);
+               // Intent i;
+                //i = new Intent(MainActivity.this,MenuActivity.class);
+               // i.putExtra("userID",extraUsername.trim());
+               // startActivity(i);
 
             }
 

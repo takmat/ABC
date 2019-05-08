@@ -4,9 +4,14 @@
 
 
     <item
+        android:id="@+id/kodmegadas"
+        app:showAsAction="always"
+        android:title="Kód megadása"
+        />
+    <item
         android:id="@+id/close_menu"
         android:icon="@drawable/ic_close"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         android:title="Close"/>
 
 </menu>

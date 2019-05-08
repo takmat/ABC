@@ -22,6 +22,16 @@
             app:layout_constraintTop_toTopOf="parent">
 
 
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/welcom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+            </TableRow>
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -63,8 +73,8 @@
                             android:background="?selectableItemBackgroundBorderless"
                             android:onClick="drawThisChar"
                             android:padding="10dp"
-                            android:src="@drawable/thumbnail_charflipv"
-                            android:tag="charflipv"
+                            android:src="@drawable/thumbnail_charvv"
+                            android:tag="charvv"
                             tools:layout_editor_absoluteX="190dp"
                             tools:layout_editor_absoluteY="69dp" />
 
@@ -75,8 +85,8 @@
                             android:background="?selectableItemBackgroundBorderless"
                             android:onClick="drawThisChar"
                             android:padding="10dp"
-                            android:src="@drawable/thumbnail_charv"
-                            android:tag="charv" />
+                            android:src="@drawable/thumbnail_charflipvv"
+                            android:tag="charflipvv" />
                     </TableRow>
 
                     <TableRow>
@@ -88,8 +98,8 @@
                             android:background="?selectableItemBackgroundBorderless"
                             android:onClick="drawThisChar"
                             android:padding="10dp"
-                            android:src="@drawable/thumbnail_charu"
-                            android:tag="charu" />
+                            android:src="@drawable/thumbnail_charuu"
+                            android:tag="charuu" />
 
                         <ImageButton
                             android:id="@+id/imageButton4"
@@ -98,8 +108,8 @@
                             android:background="?selectableItemBackgroundBorderless"
                             android:onClick="drawThisChar"
                             android:padding="10dp"
-                            android:src="@drawable/thumbnail_charflipu"
-                            android:tag="charflipu" />
+                            android:src="@drawable/thumbnail_charflipuu"
+                            android:tag="charflipuu" />
 
                     </TableRow>
 
@@ -112,17 +122,65 @@
                             android:background="?selectableItemBackgroundBorderless"
                             android:onClick="drawThisChar"
                             android:padding="10dp"
-                            android:src="@drawable/thumbnail_charf"
-                            android:tag="charf" />
+                            android:src="@drawable/thumbnail_charumbral"
+                            android:tag="charumbral" />
 
                         <ImageButton
                             android:id="@+id/imageButton6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="?selectableItemBackgroundBorderless"
-                            android:src="@drawable/thumbnail_charflipf"
-                            android:tag="charflipf"
+                            android:src="@drawable/thumbnail_charoo"
+                            android:tag="charoo"
                             android:onClick="drawThisChar"/>
+
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageButton
+                            android:id="@+id/imageButton7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"
+                            android:src="@drawable/thumbnail_charff"
+                            android:tag="charff"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/imageButton8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:src="@drawable/thumbnail_charjj"
+                            android:tag="charjj"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"/>
+
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageButton
+                            android:id="@+id/imageButton9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"
+                            android:src="@drawable/thumbnail_charlili"
+                            android:tag="charlili"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/imageButton10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:src="@drawable/thumbnail_charz"
+                            android:tag="charz"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"/>
 
                     </TableRow>
                 </TableLayout>
@@ -145,8 +203,123 @@
 
                     android:gravity="fill_horizontal"
                     android:onClick="menuItemTwo"
-                    android:text="Betük" />
+                    android:text="Betűk" />
 
+
+            </TableRow>
+            <TableRow>
+                <TableLayout
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+
+                    <TableRow
+                        android:id="@+id/letterrow11">
+
+                        <ImageButton
+                            android:id="@+id/imageButton11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"
+                            android:src="@drawable/thumbnail_aa"
+                            android:tag="letteraa"
+                            tools:layout_editor_absoluteX="190dp"
+                            tools:layout_editor_absoluteY="69dp" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"
+                            android:src="@drawable/thumbnail_letterlongaa"
+                            android:tag="letterlongaa" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/letterrow21"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/imageButton13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"
+                            android:src="@drawable/thumbnail_letteri"
+                            android:tag="letteri" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"
+                            android:src="@drawable/thumbnail_letterii"
+                            android:tag="letterii" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/letterrow31"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/imageButton15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"
+                            android:src="@drawable/thumbnail_letteroo"
+                            android:tag="letteroo" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:src="@drawable/thumbnail_letterlongoo"
+                            android:tag="letterlongoo"
+                            android:onClick="drawThisChar"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/letterrow32"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/imageButton17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"
+                            android:src="@drawable/thumbnail_lettermm"
+                            android:tag="lettermm"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/imageButton18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:src="@drawable/thumbnail_letterll"
+                            android:tag="letterll"
+                            android:onClick="drawThisChar"
+                            android:padding="10dp"/>
+
+                    </TableRow>
+                </TableLayout>
 
             </TableRow>
 
@@ -166,10 +339,23 @@
 
                     android:gravity="fill_horizontal"
                     android:onClick="menuItemThree"
-                    android:text="Gomb 3" />
+                    android:text="Puzzle" />
 
 
             </TableRow>
+            <!--<TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textMultiLine" />
+            </TableRow>-->
 
         </TableLayout>
 

@@ -53,12 +53,7 @@ public class DrawActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            /*case R.id.prev:
-                paintView.prevActual();
-                return true;
-            case R.id.next:
-                paintView.nextActual();
-                return true;*/
+
             case R.id.clear:
                 paintView.clear();
                 return true;

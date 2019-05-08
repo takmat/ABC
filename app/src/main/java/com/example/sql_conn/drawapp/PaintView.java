@@ -29,8 +29,8 @@ import java.util.Scanner;
 
 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class PaintView extends View {
-    public static int BRUSH_SIZE = 15;
-    public static final int DEF_COL = Color.GRAY;
+    public static int BRUSH_SIZE = 10;
+    public static final int DEF_COL = Color.BLACK;
     public static final int DEF_BG_COL = Color.WHITE;
     private static final float touch_tolarance = 4;
     private float mX,mY;
@@ -44,8 +44,7 @@ public class PaintView extends View {
     private Canvas mCanvas;
     private Paint mBitmapPaint = new Paint(Paint.DITHER_FLAG);
     public String file;
-    //public ArrayList<Bitmap> images = new ArrayList<>();
-    //private static int actualimage = 0;
+
 
 
 
@@ -86,39 +85,7 @@ public class PaintView extends View {
         paths.clear();
         invalidate();
     }
-    /*public void files() {
 
-        images.add(BitmapFactory.decodeResource(getResources(), R.drawable.charv2));
-        images.add(BitmapFactory.decodeResource(getResources(), R.drawable.charflipv));
-        images.add(BitmapFactory.decodeResource(getResources(), R.drawable.charflipu));
-        images.add(BitmapFactory.decodeResource(getResources(), R.drawable.charu));
-        images.add(BitmapFactory.decodeResource(getResources(), R.drawable.charf));
-
-        }
-
-    public void prevActual(){
-        if (actualimage >0)
-        {
-            actualimage-= 1;
-            clear();
-        }
-
-
-    }
-    public void nextActual(){
-        if (actualimage+1 != images.size())
-        {
-            actualimage += 1;
-            clear();
-        }
-
-    }
-    public Bitmap changeBitmap() {
-        Bitmap bitmap = images.get(actualimage);
-
-
-        return bitmap;
-    }*/
     public Bitmap changeBitmap() {
         int resId = getResources().getIdentifier(file, "drawable", "com.example.sql_conn" );
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), resId);
